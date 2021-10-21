@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Helvetica,
+    sans-serif;
+}
+body {
+  background-color: rgb(197, 197, 197);
+}
+/* .grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+} */
+
+.header__navbar {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+.subnav {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  z-index: 1;
+  list-style: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+  text-decoration: none;
+}
+.subnav > li > a {
+  color: #000;
+  text-decoration: none;
+  padding-left: 16px;
+  line-height: 46px;
+}
+
+.subnav > li:hover > a {
+  background-color: #ccc;
+  display: block;
+}
+
+.header__navbar--list li:hover .subnav {
+  display: block;
+}
+
+.subnav2 {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  z-index: 1;
+  list-style: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+  text-decoration: none;
+}
+.subnav2 > li > a {
+  color: #000;
+  text-decoration: none;
+  padding-left: 16px;
+  line-height: 46px;
+}
+
+.subnav2 > li:hover > a {
+  background-color: #ccc;
+  display: block;
+}
+
+.header__navbar--list li:hover .subnav2 {
+  display: block;
+}
+.subnav3 {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  z-index: 1;
+  list-style: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+  text-decoration: none;
+}
+.subnav3 > li > a {
+  color: #000;
+  text-decoration: none;
+  padding-left: 16px;
+  line-height: 46px;
+}
+
+.subnav3 > li:hover > a {
+  background-color: #ccc;
+  display: block;
+}
+
+.header__navbar--list li:hover .subnav3 {
+  display: block;
+}
+
+.header__navbar--list {
+  margin: 0 350px 0 0;
+  color: rgb(255, 255, 255);
+  width: 368px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.header__navbar--list > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__navbar--item:hover {
+  color: aliceblue;
+  background-color: rgba(204, 204, 204, 0.548);
+}
+
+.header__navbar--item {
+  padding: 16px 3px;
+  margin: 0 -21px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.img__logo {
+  margin: 0px 32px;
+  width: 260px;
+  height: 55px;
+  position: relative;
+  left: 50px;
+  background-color: #c6c5ff;
+}
+
+.btn__search {
+  margin: 14px 18px;
+}
+.btn__click {
+  width: 32px;
+  height: 24px;
+  background-color: #fff;
+  position: relative;
+  left: 296px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__search--item {
+  width: 300px;
+  height: 26px;
+  border-radius: 25px;
+  border: none;
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  border: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 16px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-containers {
+  padding: 16px;
+  width: 80%;
+}
+
+.play-music {
+  width: 100%;
+  margin: 16px 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.815);
+}
+
+.play-name {
+  font-size: 32px;
+  font-weight: 100;
+}
+.play-list {
+  width: 270px;
+  height: 24px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.play-item {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.play-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.play-audio {
+  width: 100%;
+}
+.btn__click--like:hover {
+  background-color: rgb(252, 168, 168);
+  color: #fff;
+}
+.btn__click--like {
+  width: 70px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn__click--view {
+  color: #000;
+}
+
+.like {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+.section-introduce {
+  width: 100%;
+  margin-left: 32px;
+  display: flex;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.815);
+}
+.official-logo {
+  width: 150px;
+}
+.official-boss {
+  list-style: none;
+  margin: 16px 20px;
+}
+.official-text {
+  font-size: 32px;
+}
+.official-text2 {
+}
+
+.social-network {
+  width: 100%;
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.about-us {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.social-items {
+  font-size: 32px;
+  margin: 20px auto;
+}
+.fa-brands {
+}
+.fa-facebook {
+  color: rgba(71, 105, 165, 1);
+}
+.fa-google-plus {
+  color: rgba(191, 55, 39, 1);
+}
+.fa-twitter-square {
+  color: rgba(27, 149, 224, 1);
+}
+
+.list-music {
+  margin: 32px;
+  width: 23%;
+  padding: 16px;
+  background-color: #fff;
+  /* position: relative;
+  left: 1000px;
+  top:-624px */
+}
+.list-music-container {
+  list-style: none;
+}
+.list-music-item:hover {
+  background-color: #c6c5ff;
+}
+.list-music-item {
+  padding: 16px;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.678);
+  position: relative;
+  cursor: pointer;
+}
+
+.singer2 {
+}
+
+.singer {
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.img-items {
+  width: 32px;
+  border-radius: 3px;
+  position: absolute;
+  left: 200px;
+  bottom: 12px;
+}
+
+.play-lyric {
+  width: 100%;
+  border: 1px #ccc solid;
+  margin-left: 32px;
+}
+.play-lyric-content {
+  padding: 32px;
+  height: 299px;
+  overflow: auto;
+}
+.lyric-name {
+  border-bottom: 1px #ccc solid;
+}
+.toggle-lyric {
+}
+.album-container {
+  width: 100%;
+  margin: 20px 32px;
+}
+.album-box {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.album-items {
+  width: calc(20% - 30px);
+  height: 20%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.album-name:hover {
+  color: lightcoral;
+}
+.album-name {
+  font-size: 170%;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.album-image {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.album-title {
+  font-size: 32px;
+  border-left: 3px solid red;
+  padding-left: 8px;
+  margin-bottom: 10px;
+}
