@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "..\\flexbox"
+		},
+		{
+			"path": "..\\BEM"
+		},
+		{
+			"path": "..\\w3 band tu lam"
+		},
+		{
+			"path": "..\\..\\w3_band"
+		},
+		{
+			"path": "..\\source\\học css"
+		},
+		{
+			"path": "..\\source\\vd01.html"
+		},
+		{
+			"path": "..\\shopee"
+		},
+		{
+			"path": "..\\websitebangiaydep"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vd01.html",
+		"powermode.enabled": true,
+		"powermode.enableShake": false,
+		"powermode.explosionOffset": 0.2,
+		"powermode.explosionSize": 5
+	}
+}

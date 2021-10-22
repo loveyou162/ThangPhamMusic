@@ -176,6 +176,7 @@ body {
 
 .container {
   width: 80%;
+  height: 1750px;
   border: 2px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -348,39 +349,139 @@ body {
 .album-container {
   width: 100%;
   margin: 20px 32px;
+  height: 320px;
 }
 .album-box {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
+/* .album-image:hover,
+.album-items:hover {
+  background-color: rgba(78, 78, 78, 0.459);
+} */
+
 .album-items {
   width: calc(20% - 30px);
   height: 20%;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: hidden;
 }
 
 .album-name:hover {
-  color: lightcoral;
+  color: rgb(30, 245, 30);
 }
 .album-name {
-  font-size: 170%;
+  font-size: 16px;
   text-decoration: none;
   color: #000;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  margin: 10px;
+  margin-bottom: 16px;
+  font-family: "Helvetica Neue", "Helvetica";
+}
+
+.album-image:hover {
+  width: 110%;
+  height: 110%;
+  border-radius: 20px 10px 20px 0;
 }
 
 .album-image {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
+  transition: width 0.5s, height 0.5s, border-radius 1s;
 }
+.video-title,
 .album-title {
   font-size: 32px;
   border-left: 3px solid red;
   padding-left: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+}
+.video-title {
+  margin-left: 32px;
+}
+.video {
+  width: 100%;
+  /* margin-left: 16px; */
+}
+
+.video-mini {
+  margin-top: -10px;
+  margin: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.video_item {
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.video-content:hover {
+  color: #f77272;
+}
+
+.video-content {
+  margin: 16px 0;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.icon-video {
+  width: 100%;
+  height: 100px;
+}
+.names-singer {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.layout {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+#footer {
+  width: 100%;
+  height: 170px;
+  background-color: #1b1b1b;
+}
+
+.right-member {
+  width: 100%;
+  height: 100%;
+  /* background: #000; */
+}
+
+.right-member-box {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  position: relative;
+  top: 10px;
+  left: 134px;
+}
+
+.img-tickets {
+  /* position: absolute;
+  top: 4px;
+  left: 202px; */
+}
+.copyright {
+  color: #fff;
+}
+
+.copyright2 {
+  color: #fff;
+}
+.footer-contents {
+  width: 60%;
 }
