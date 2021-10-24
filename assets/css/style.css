@@ -22,6 +22,14 @@ body {
   margin: 0 auto;
 } */
 
+.grid {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: 16px;
+  z-index: 1;
+}
 .header__navbar {
   height: 55px;
   display: flex;
@@ -180,7 +188,7 @@ body {
   border: 2px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  margin: 16px auto;
+  margin: 68px auto;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -462,6 +470,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
+  bottom: 0;
 }
 
 .linkdc {
@@ -479,7 +488,7 @@ body {
 .right-member-box {
   display: flex;
   width: 60%;
-  height: 100%;
+  height: 88%;
   position: relative;
   top: 20px;
   left: 200px;
