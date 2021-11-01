@@ -224,8 +224,26 @@ body {
 
 .play-image {
   width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-top: 10px;
+  animation: xoayvong 5s linear 0s infinite;
+  -webkit-animation: xoayvong 5s linear 0s infinite;
+  -moz-animation: xoayvong 5s linear 0s infinite;
+  -o-animation: xoayvong 5s linear 0s infinite;
+}
+
+@keyframes xoayvong {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 
 .play-audio {
@@ -234,6 +252,11 @@ body {
 .btn__click--like:hover {
   background-color: rgb(252, 168, 168);
   color: #fff;
+}
+
+.linknhac {
+  text-decoration: none;
+  color: #000;
 }
 .btn__click--like {
   width: 70px;
@@ -337,7 +360,7 @@ body {
 }
 
 .img-items {
-  width: 32px;
+  width: 45px;
   border-radius: 3px;
   position: absolute;
   left: 200px;
