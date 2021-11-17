@@ -7,9 +7,6 @@
 			"path": "..\\BEM"
 		},
 		{
-			"path": "..\\w3 band tu lam"
-		},
-		{
 			"path": "..\\..\\w3_band"
 		},
 		{
@@ -26,6 +23,12 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\Web ban hang PR01_02"
+		},
+		{
+			"path": "..\\GRID"
 		}
 	],
 	"settings": {

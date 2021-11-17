@@ -14,7 +14,12 @@ html {
     sans-serif;
 }
 body {
-  background-color: rgb(197, 197, 197);
+  background: linear-gradient(
+    360deg,
+    rgb(145, 241, 66) 0%,
+    rgb(240, 232, 120) 100%
+  );
+  background-repeat: no-repeat;
 }
 /* .grid {
   width: 1200px;
@@ -34,7 +39,7 @@ body {
   height: 55px;
   display: flex;
   justify-content: space-between;
-  background-color: #000000;
+  background-color: #070707;
 }
 
 .subnav {
@@ -44,6 +49,7 @@ body {
   top: 55px;
   left: 0;
   background-color: rgb(255, 255, 255);
+
   color: #000;
   z-index: 1;
   list-style: none;
@@ -175,6 +181,7 @@ body {
 }
 
 .btn__search--item {
+  padding: 16px;
   width: 300px;
   height: 26px;
   border-radius: 25px;
@@ -187,6 +194,12 @@ body {
   height: 1750px;
   border: 2px;
   background-color: rgb(255, 255, 255);
+  /* background: linear-gradient(
+    360deg,
+    rgb(145, 241, 66) 0%,
+    rgb(240, 232, 120) 100%
+  );
+  background-repeat: no-repeat; */
   border-radius: 10px;
   margin: 68px auto;
   position: relative;
@@ -223,8 +236,8 @@ body {
 }
 
 .play-image {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-top: 10px;
   animation: xoayvong 5s linear 0s infinite;
@@ -254,10 +267,6 @@ body {
   color: #fff;
 }
 
-.linknhac {
-  text-decoration: none;
-  color: #000;
-}
 .btn__click--like {
   width: 70px;
   height: 30px;
@@ -327,6 +336,11 @@ body {
 }
 .fa-twitter-square {
   color: rgba(27, 149, 224, 1);
+}
+
+.linknhac {
+  text-decoration: none;
+  color: #000;
 }
 
 .list-music {
@@ -497,8 +511,9 @@ body {
 }
 
 .linkdc {
+  display: inline-block;
   position: absolute;
-  left: 60em;
+  left: 80em;
   top: 32px;
 }
 

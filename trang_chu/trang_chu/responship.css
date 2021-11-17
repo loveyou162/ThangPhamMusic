@@ -1,0 +1,145 @@
+@media screen and (max-width: 2553px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(233, 169, 161);
+    background: linear-gradient(
+      360deg,
+      rgba(233, 169, 161, 1) 0%,
+      rgba(170, 241, 255, 1) 100%
+    );
+    background-repeat: no-repeat;
+  }
+  .web {
+    height: 1000px;
+    background: rgb(233, 169, 161);
+    background: linear-gradient(
+      360deg,
+      rgba(233, 169, 161, 1) 0%,
+      rgba(170, 241, 255, 1) 100%
+    );
+    background-repeat: no-repeat;
+    display: flex;
+  }
+  .nav-left {
+    width: 20%;
+    height: 1000px;
+    box-shadow: 0 0px 15px rgb(161, 159, 159);
+    position: fixed;
+    left: 0;
+    background: rgb(233, 169, 161);
+    background: linear-gradient(
+      360deg,
+      rgba(233, 169, 161, 1) 0%,
+      rgba(170, 241, 255, 1) 100%
+    );
+    /* background-repeat: no-repeat; */
+  }
+  .navbar {
+  }
+  .logo-image {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  #menu-boss {
+  }
+
+  .menu_box {
+    list-style: none;
+    border-bottom: 1px solid rgb(163, 162, 162);
+  }
+  .btn-playlist,
+  .menu-item {
+    font-size: 20px;
+    padding: 9px 20px;
+  }
+  .btn-playlist:hover,
+  .menu-item:hover {
+    background-color: rgb(189, 189, 189);
+  }
+  .menu-box2 {
+    list-style: none;
+    border-bottom: 1px solid rgb(163, 162, 162);
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: #000;
+  }
+  .sub-icon {
+  }
+
+  .btn-playlist {
+    font-weight: 550;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    left: 0;
+    padding: 16px 90px 16px 20px;
+  }
+
+  .body-mid {
+    width: 80%;
+  }
+  .sub-container {
+    height: 100%;
+    margin-left: 564px;
+    border-right: 1px solid rgba(170, 170, 170, 0.644);
+  }
+  .sub-menu {
+  }
+  .sub-box {
+    list-style: none;
+    display: flex;
+    padding: 14px;
+  }
+  .sub-box a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .sub-item a:hover {
+    color: rgba(49, 49, 49, 0.623);
+
+    border-radius: 18px;
+  }
+  .sub-item {
+    padding: 14px 20px;
+  }
+
+  .list-container {
+    width: 85%;
+    height: 300px;
+    border: 1px solid rgba(94, 94, 94, 0.856);
+    border-radius: 15px;
+  }
+
+  .list-group {
+    position: relative;
+  }
+
+  .list-group li {
+    list-style: none;
+  }
+
+  .text-top {
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .list-group-item {
+  }
+
+  .list-container-2 {
+  }
+  .list-play {
+  }
+}
