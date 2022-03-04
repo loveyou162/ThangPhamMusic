@@ -14,6 +14,10 @@ html {
   background-repeat: no-repeat;
 }
 
+.tieude{
+  text-transform: capitalize;
+}
+
 .mt-10 {
   font-size: 10px;
 }
@@ -118,46 +122,88 @@ html {
   border-right: 1px solid rgba(182, 182, 182, 0.644);
   position: relative;
 }
-.sub-menu {
-  width: 100%;
-  height: 76px;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  margin: 0 25px 0 -25px;
-  /* background: linear-gradient(
-    360deg,
-    rgb(241, 189, 120) 0%,
-    rgba(120, 240, 130) 100%
-  ); */
-  background: rgb(138, 137, 80);
-  color: #fff;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 15px rgb(0, 0, 0, 0);
-}
-.sub-box {
-  list-style: none;
+.sub-menu{
   display: flex;
-  padding: 14px;
+  justify-content: space-between;
+  position: relative;
+  background-color: rgb(141, 139, 31);
+  
 }
-.sub-box a {
+
+.sub-box > li{
+  list-style: none;
+  /* margin-left: 12px; */
+  position: relative;
+}
+
+.sub-box > li > a{
+  color: #fff;
   text-decoration: none;
+  margin: 0 18px;
+  line-height: 75px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sub-item:hover{
+  background-color: rgba(240, 120, 120, 0.637);
+  border-radius: 13px;
+
+} 
+
+.sub-box > li:hover .section-menu{
+  display: block;
+  position: absolute;
+  animation: slide 0.6s;
+}
+
+.sub-box{
+  margin-left: -23px;
+  /* margin-right: -25px; */
+  width: 102%;
+  height: 75px;
+  background-color: rgb(141, 139, 31);
+  display: flex;
+  /* justify-content: space-between; */
+}
+.sub-item{
+
+}
+
+.section-menu{
+  background-color: rgb(141, 139, 31);
+  display: none;
+  
+}
+
+.section-menu > li{
+  list-style: none;
+  min-width: 200px;
+  
+}
+
+.section-menu > li > a{
   color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: 600;
-}
-.sub-item a:hover {
-  color: rgba(39, 39, 39, 0.623);
+  text-decoration: none;
+  line-height:35px;
+  padding: 0 10px 0 30px;
 
-  border-radius: 18px;
 }
 
-.sub-item a {
-  color: rgb(255, 255, 255);
+.section-menu > li:hover > a:hover{
+  background-color: rgba(240, 120, 120, 0.637);
+  display: block;
+  border-radius: 13px;
+  padding: 0 10px 0 30px;Z
 }
 
-.sub-item {
-  padding: 14px 20px;
+@keyframes slide {
+  from {
+    height: 1px;
+  }
+  to {
+    height: 141px;
+  }
 }
 
 .subtitle {
@@ -170,7 +216,7 @@ html {
 
 .search-btn {
   position: absolute;
-  right: 400px;
+  right: 100px;
   top: 20px;
 }
 .fas {
@@ -284,7 +330,7 @@ td {
 }
 
 .row-menu {
-  margin: 70px 16px 0 0  ;
+  margin: 10px 16px 0 0  ;
   width: 100%;
   height: 600px;
   border-radius: 15px;
@@ -317,7 +363,7 @@ td {
 }
 
 .list-play>p{
-  margin-top: 120px;
+  margin-top: 100px;
   font-size: 40px;
 }
 
@@ -375,7 +421,7 @@ td {
 .image-album{
     height: 600px;
     position: relative;
-    top: 190px;
+    top: 100px;
     right: 0;
     
 }
@@ -430,4 +476,66 @@ td {
   height: 60px;
   /* margin-left: -800px; */
   /* margin-top: 640px; */
+}
+
+#footer{
+  width: 80%;
+  position: relative;
+  left: 20%;
+}
+
+.social{
+  margin-top: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: bold;
+}
+.md-16{
+  margin: 30px 25px;
+}
+
+
+.facebook{
+  display: flex;
+  color: rgb(21, 83, 216);
+  font-size:32px;
+  text-decoration: none;
+  
+}
+
+.social-network{
+  /* width: 30%; */
+  display: flex;
+  margin: 0 auto;
+  position: absolute;
+  left: 20em;
+}
+
+.social-network p:hover{
+  color:rgb(73, 73, 73);
+}
+.social-network p:active{
+  color: red;
+}
+.social-network a{
+  text-decoration: none;
+}
+
+.fab{
+
+}
+.fa-facebook{
+
+}
+.insta{
+  display: flex;
+  font-size:32px;
+  color: red;
+}
+.fa-instagram{
+
+}
+.twitter{
+  display: flex;
+  font-size:32px;
+  color: rgb(30, 183, 230);
 }
